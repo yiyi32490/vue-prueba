@@ -131,6 +131,7 @@
                 :items="countryCodeDemo"
                 class="phone-code-select"
                 v-model="personalInfo.phones[0].code"
+                @change="updatePersonalInfo"
               ></v-select>
               <v-text-field
                 v-model="personalInfo.phones[0].number"
@@ -173,6 +174,7 @@
                 :items="countryCodeDemo"
                 class="phone-code-select"
                 v-model="phone.code"
+                @change="updatePersonalInfo"
               ></v-select>
               <v-text-field
                 v-model="phone.number"
